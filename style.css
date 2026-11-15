@@ -1,0 +1,48 @@
+/* CSS written by Crystal Smith */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:palegoldenrod}
+    gap: 1rem;
+
+@media screen and (min-width: 700px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        background-color:tan
+    }
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color:aliceblue;
+    padding: 0.5rem;
+    color: black;
+}
+
+nav a:hover {
+    background-color:black;
+    color:aliceblue;
+}
+
+.card-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color:rosybrown;
+    padding: .5rem;
+}
+
+.card-row > section {
+    flex: 1 1 200px;
+    background-color:aliceblue;
+    padding: .5rem;
+}
+
