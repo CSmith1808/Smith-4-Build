@@ -4,14 +4,29 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    background-color:palegoldenrod}
+    background-color:blue;
+    color: white;
     gap: 1rem;
+}
 
 @media screen and (min-width: 700px) {
     body {
         grid-template-columns: 1fr 1fr;
-        background-color:tan
     }
+
+    header, footer {
+    grid-column: 1/3;
+}
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header, footer {
+    grid-column: 2/4;
+}
 }
 
 nav ul {
@@ -25,6 +40,7 @@ nav a {
     background-color:aliceblue;
     padding: 0.5rem;
     color: black;
+    border: 2px solid red;
 }
 
 nav a:hover {
@@ -36,13 +52,17 @@ nav a:hover {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    background-color:rosybrown;
+    background-color:yellow;
     padding: .5rem;
 }
 
 .card-row > section {
     flex: 1 1 200px;
     background-color:aliceblue;
+    color:red;
     padding: .5rem;
 }
 
+h2, h3 {
+    text-decoration: underline;
+}
