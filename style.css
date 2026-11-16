@@ -7,6 +7,7 @@ body {
     background-color:blue;
     color: white;
     gap: 1rem;
+    border: 2px dashed white;
 }
 
 @media screen and (min-width: 700px) {
@@ -58,7 +59,7 @@ nav a:hover {
 
 .card-row > section {
     flex: 1 1 200px;
-    background-color:aliceblue;
+    background-color:rgb(200, 207, 230);
     color:red;
     padding: .5rem;
 }
@@ -66,8 +67,13 @@ nav a:hover {
 h1 {
     font-size: 2.5rem;
     text-shadow: 2px 2px gray;
+    padding: 1rem;
 }
 
 h2, h3 {
     text-decoration: underline;
+}
+
+section {
+    padding: 1rem;
 }
